@@ -23,7 +23,7 @@ import com.onofre.model.Cuenta;
 import com.onofre.service.ICuentaService;
 
 @RestController
-@RequestMapping("Cuentas")
+@RequestMapping("cuentas")
 public class CuentaController {
 
 	@Autowired

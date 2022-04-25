@@ -1,0 +1,41 @@
+<mat-table #table [dataSource]="dataSource" matSort>
+  <ng-container matColumnDef="idMarca">
+    <mat-header-cell *matHeaderCellDef mat-sort-header> ID </mat-header-cell>
+    <mat-cell *matCellDef="let row">{{ row.idMarca }}</mat-cell>
+  </ng-container>
+
+  <ng-container matColumnDef="nombre">
+    <mat-header-cell *matHeaderCellDef mat-sort-header>
+      Nombre
+    </mat-header-cell>
+    <mat-cell *matCellDef="let row">{{ row.nombre }}</mat-cell>
+  </ng-container>
+
+  <ng-container matColumnDef="descripcion">
+    <mat-header-cell *matHeaderCellDef mat-sort-header>
+      Descripción
+    </mat-header-cell>
+    <mat-cell *matCellDef="let row">{{ row.descripcion }}</mat-cell>
+  </ng-container>
+
+
+
+
+  <ng-container matColumnDef="acciones">
+    <mat-header-cell *matHeaderCellDef>Acciones</mat-header-cell>
+    <mat-cell *matCellDef="let row">
+      <button mat-button color="primary" [routerLink]="['edicion', row.idEmpleado]">
+        <mat-icon>ballot</mat-icon>
+      </button>
+      <button mat-button color="accent" (click)="eliminar(row.idEmpleado)">
+        <mat-icon>delete</mat-icon>
+      </button>
+    </mat-cell>
+  </ng-container>
+
+  <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+  <mat-row *matRowDef="let row; columns: displayedColumns"></mat-row>
+</mat-table>
+
+<mat-paginator [pageSize]="5" [pageSizeOptions]="[5, 10, 25, 100]" [length]="5" >
+</mat-paginator>

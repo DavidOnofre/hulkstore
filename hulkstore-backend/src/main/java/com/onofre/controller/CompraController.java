@@ -24,7 +24,7 @@ import com.onofre.model.Compra;
 import com.onofre.service.ICompraService;
 
 @RestController
-@RequestMapping("Compras")
+@RequestMapping("compras")
 public class CompraController {
 
 	@Autowired

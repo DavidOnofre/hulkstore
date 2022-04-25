@@ -23,7 +23,7 @@ import com.onofre.model.Empleado;
 import com.onofre.service.IEmpleadoService;
 
 @RestController
-@RequestMapping("Empleados")
+@RequestMapping("empleados")
 public class EmpleadoController {
 
 	@Autowired

@@ -23,7 +23,7 @@ import com.onofre.model.Marca;
 import com.onofre.service.IMarcaService;
 
 @RestController
-@RequestMapping("Marcas")
+@RequestMapping("marcas")
 public class MarcaController {
 
 	@Autowired

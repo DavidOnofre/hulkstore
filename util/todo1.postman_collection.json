@@ -1,0 +1,614 @@
+{
+	"info": {
+		"_postman_id": "8fe996a3-a950-4257-8a6d-145601a98d89",
+		"name": "todo1",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "hulkstore",
+			"item": [
+				{
+					"name": "empleado",
+					"item": [
+						{
+							"name": "get id / getAll",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/empleados",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"empleados"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "delete",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/empleados/4",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"empleados",
+										"4"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "insert",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"nombres\": \"Estefania\",\n    \"apellidos\": \"Onofre\",\n    \"cedula\": \"1719382988\",\n    \"direccion\": \"Cutuglagua\",\n    \"telefono\": \"0988555898\",\n    \"email\": \"onofre.estefania@epn.edu.ec\"\n}   ",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/empleados",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"empleados"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "edit",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"idEmpleado\": 1,\n    \"nombres\": \"Dario\",\n    \"apellidos\": \"Onofre\",\n    \"cedula\": \"1719382986\",\n    \"direccion\": \"Cutuglagua\",\n    \"telefono\": \"0988555896\",\n    \"email\": \"onofre.david@epn.edu.ec\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/empleados",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"empleados"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "marca",
+					"item": [
+						{
+							"name": "get id / getAll",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/marcas",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"marcas"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "delete",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/marcas/4",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"marcas",
+										"4"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "insert",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"nombre\": \"marvel\",\n    \"descripcion\": \"articulos de colección.\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/marcas",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"marcas"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "edit",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"idEmpleado\": 1,\n    \"nombres\": \"Dario\",\n    \"apellidos\": \"Onofre\",\n    \"cedula\": \"1719382986\",\n    \"direccion\": \"Cutuglagua\",\n    \"telefono\": \"0988555896\",\n    \"email\": \"onofre.david@epn.edu.ec\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/marcas",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"marcas"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "producto",
+					"item": [
+						{
+							"name": "get id / getAll",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/productos",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"productos"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "delete",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/productos/4",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"productos",
+										"4"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "insert",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"nombre\": \"taza\",\n    \"descripcion\": \"articulos de colección para la oficina.\",\n    \"precio\": 3.50,\n    \"marca\": {\n        \"idMarca\": \"2\"\n    }\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/productos",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"productos"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "edit",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"idEmpleado\": 1,\n    \"nombres\": \"Dario\",\n    \"apellidos\": \"Onofre\",\n    \"cedula\": \"1719382986\",\n    \"direccion\": \"Cutuglagua\",\n    \"telefono\": \"0988555896\",\n    \"email\": \"onofre.david@epn.edu.ec\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/productos",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"productos"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "inventario",
+					"item": [
+						{
+							"name": "get id / getAll",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/inventarios",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"inventarios"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "delete",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/inventarios/4",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"inventarios",
+										"4"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "insert",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"cantidad\": 200,\n    \"fecha\": \"2021-06-11T06:28:29.401Z\",\n    \"total\": 200,\n    \"producto\": {\n        \"idProducto\": \"2\"\n    }\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/inventarios",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"inventarios"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "edit",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"idInventario\": 1,\n    \"cantidad\": 200,\n    \"fecha\": \"2021-06-11T06:28:29.401Z\",\n    \"total\": 95,\n    \"producto\": {\n        \"idProducto\": \"1\"\n    }\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/inventarios",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"inventarios"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "cuenta",
+					"item": [
+						{
+							"name": "get id / get all",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/cuentas",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"cuentas"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "delete",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/cuentas/4",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"cuentas",
+										"4"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "insert",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"numeroCuenta\": \"4771139500\",\n    \"tipoCuenta\": \"AHO\",\n    \"estado\": true,\n    \"empleado\": {\n        \"idEmpleado\": \"1\"\n    }\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/cuentas",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"cuentas"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "edit",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"idEmpleado\": 1,\n    \"nombres\": \"Dario\",\n    \"apellidos\": \"Onofre\",\n    \"cedula\": \"1719382986\",\n    \"direccion\": \"Cutuglagua\",\n    \"telefono\": \"0988555896\",\n    \"email\": \"onofre.david@epn.edu.ec\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/cuentas",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"cuentas"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "compra",
+					"item": [
+						{
+							"name": "get",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/compras",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"compras"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "delete",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/compras/4",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"compras",
+										"4"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "insert",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"compra\": {\n        \"fecha\": \"2021-06-11T06:28:29.401Z\",\n        \"subtotal\": 15.50,\n        \"iva\": 0.12,\n        \"total\": 16.20,\n        \"empleado\": {\n            \"idEmpleado\": \"1\"\n        },\n        \"detalleCompra\": [\n            {\n                \"cantidad\": 1,\n                \"subtotal\": 25.50,\n                \"total\": 75.50,\n                \"producto\": {\n                    \"idProducto\": 1\n                }\n            },\n            {\n                \"cantidad\": 1,\n                \"subtotal\": 30.50,\n                \"total\": 30.50,\n                \"producto\": {\n                    \"idProducto\": 2\n                }\n            }\n        ]\n    },\n    \"lstInventario\": [\n        {\n            \"idInventario\": 1\n        },\n        {\n            \"idInventario\": 2\n        }\n    ]\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/compras",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"compras"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "edit",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"idEmpleado\": 1,\n    \"nombres\": \"Dario\",\n    \"apellidos\": \"Onofre\",\n    \"cedula\": \"1719382986\",\n    \"direccion\": \"Cutuglagua\",\n    \"telefono\": \"0988555896\",\n    \"email\": \"onofre.david@epn.edu.ec\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/compras",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"compras"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		}
+	]
+}

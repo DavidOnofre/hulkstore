@@ -23,7 +23,7 @@ import com.onofre.model.Producto;
 import com.onofre.service.IProductoService;
 
 @RestController
-@RequestMapping("Productos")
+@RequestMapping("productos")
 public class ProductoController {
 
 	@Autowired

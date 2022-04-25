@@ -23,7 +23,7 @@ import com.onofre.model.Inventario;
 import com.onofre.service.IInventarioService;
 
 @RestController
-@RequestMapping("Inventarios")
+@RequestMapping("inventarios")
 public class InventarioController {
 
 	@Autowired
